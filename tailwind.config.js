@@ -10,10 +10,32 @@ module.exports = {
     `app.{js,ts,vue}`
   ],
   theme: {
+    // screens: {
+    //   sm: '320px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+    // },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('~/static/imgs/Hero.svg')",
+        'hero-pattern2': "url('~/static/imgs/Hero2.svg')",
+        'item1': "url('~/static/imgs/item1.png')",
+        'item2': "url('~/static/imgs/item2.png')",
+        'item3': "url('~/static/imgs/item3.png')",
+        'item4': "url('~/static/imgs/item4.png')",
+        'item5': "url('~/static/imgs/item5.png')",
+        'results': "url('~/static/imgs/results.png')",
+      },
       colors: {
         'header-color': 'rgba(155, 152, 138, 1)',
         'footer-color': 'rgba(206, 173, 141, 1)',
+        'hero-orange': '#FF8F66',
+        'hero-gray': '#666666',
+        'hero-blue': '#6666FF',
+        'item-line': '#EDB259',
+        'managment-item-background': '#F9F1F1',
+        'results-container': 'rgba(217, 217, 217, 0.2)'
       },
       padding: {
         '53px': '53px',
@@ -22,14 +44,52 @@ module.exports = {
       },
       maxWidth: {
         '110': '110px',
+        '300': '300px',
+        '220': '220px',
+        '268': '254px',
+        '580': '580px',
+        '90' : '90%',
+      },
+      height: {
+        '90': '90px',
+        '90p': '90%',
+        '75p': '75%',
+        '307': '307px',
+        '411': '411px',
+        '540': '540px',
+        '1200': '1200px',
+        'min': 'min-content',
+      },
+      spacing: {
+        '90px': '90px',
+        '90p': '90%',
+        '40px': '40px',
+        '36px': '36px',
+        '20px': '20px',
+        '30px': '30px',
+        '53px': '53px',
+        '63px': '63px',
+        '60px': '60px',
+        '44px': '44px',
+        '7px': '7px',
+        '26.5': '26.5%',
+        '14.5': '14.5%',
+      },
+      fontSize: {
+        '40': '40px',
+        '48': '48px',
+        '72': '72px',
+        '32': '32px',
+        '220': '220px',
+        '24': ['24px', '32px'],
       },
     },
     container: {
       center: true,
     },
-    height: {
-      '90': '90px'
-    },
+    borderRadius: {
+      DEFAULT: '10px'
+    }
   },
   plugins: [],
 }
