@@ -1,40 +1,42 @@
 <template>
     <div class="results bg-body-color flex flex-col text-white pt-60px">
         <span class="font-bold text-4xl self-center">Наши результаты </span>
-        <div class="bg-results bg-cover bg-no-repeat bg-center h-540 mt-60px flex justify-center items-center ">
+        <div ref="observer"
+            class="bg-results bg-cover bg-no-repeat bg-center h-540 mt-60px flex justify-center items-center ">
             <div class="container h-90p flex bg-results-container items-center pl-30px">
                 <div class="w-26.5 flex flex-col text-center">
-                    <span class="block font-bold text-220">33</span>
+                    <span class="block font-bold text-220"><span class="count_number">33</span></span>
                     <span class="block font-bold text-40 underNumber">года на рынке</span>
                 </div>
                 <div class="flex flex-wrap justify-end h-75p content-between">
                     <div class="flex justify-between w-90p">
                         <div class="flex flex-col w-min justify-around max-w-268">
-                            <span class="block font-bold text-40">1 000+</span>
+                            <span class="block font-bold text-40"><span class="count_number">1000</span>+</span>
                             <span class="block text-24  underNumber">Телекомуникационных компании</span>
                         </div>
                         <div class="flex flex-col w-min justify-around max-w-268">
-                            <span class="block font-bold text-40">500+</span>
+                            <span class="block font-bold text-40"><span class="count_number">500</span>+</span>
                             <span class="block text-24  underNumber">Министерства обороны РУ</span>
                         </div>
                         <div class="flex flex-col justify-around max-w-268">
-                            <span class="block font-bold text-40">7 000+</span>
+                            <span class="block font-bold text-40"><span class="count_number">7000</span>+</span>
                             <span class="block text-24  underNumber">Министерство образования РУ</span>
                         </div>
                     </div>
                     <div class="flex justify-between w-90p">
                         <div class="flex flex-col justify-around max-w-268">
-                        <span class="block font-bold text-40">20+</span>
-                        <span class="block text-24  underNumber">Нефтегазовые, горно-металлкургические компании</span>
-                    </div>
-                    <div class="flex flex-col justify-around max-w-268">
-                        <span class="block font-bold text-40">40+</span>
-                        <span class="block text-24  underNumber">Количество <br> Спец. техники</span>
-                    </div>
-                    <div class="flex flex-col justify-around max-w-268">
-                        <span class="block font-bold text-40">10 000+</span>
-                        <span class="block text-24  underNumber">Инжинеринговые компании областных мэрий РУ</span>
-                    </div>
+                            <span class="block font-bold text-40"><span class="count_number">20</span>+</span>
+                            <span class="block text-24  underNumber">Нефтегазовые, горно-металлкургические
+                                компании</span>
+                        </div>
+                        <div class="flex flex-col justify-around max-w-268">
+                            <span class="block font-bold text-40"><span class="count_number">40</span>+</span>
+                            <span class="block text-24  underNumber">Количество <br> Спец. техники</span>
+                        </div>
+                        <div class="flex flex-col justify-around max-w-268">
+                            <span class="block font-bold text-40"><span class="count_number">10000</span>+</span>
+                            <span class="block text-24  underNumber">Инжинеринговые компании областных мэрий РУ</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,13 +45,41 @@
     </div>
 </template>
 <script>
+import $ from 'jquery'
+
 export default {
-    
+    mounted() {
+        let flag = 0
+        const options = {
+            rootMargin: '0px',
+            threshold: 1.0
+        }
+        const callback = function (entries, observer) {
+            if (entries[0].isIntersecting) {
+                if (flag === 0) {
+                    flag = 1
+                    $('.count_number').each(function () {
+                        $(this).prop('Counter', 0).animate({
+                            Counter: $(this).text()
+                        },
+                            {
+                                duration: 6000,
+                                easing: 'swing',
+                                step: function (now) { $(this).text(Math.ceil(now)); }
+                            });
+                    });
+                }
+            }
+        };
+        const observer = new IntersectionObserver(callback, options);
+        observer.observe(this.$refs.observer)
+    },
 }
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
- .underNumber {
+
+.underNumber {
     font-family: 'Raleway', sans-serif;
- }
+}
 </style>
