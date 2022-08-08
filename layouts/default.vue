@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-footer-color">
+    <div class="bg-body-color">
         <!-- <MobileMenu v-show="showMobileMenu"/> -->
         <Navbar @showMobileMenu="showMobileMenu = true"/>
         <Nuxt />
@@ -26,6 +26,7 @@ export default {
     }
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        caret-color: transparent;
     }
     
 </style>

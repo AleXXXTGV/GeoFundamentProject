@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    `components/**/*.{vue,js}`,
-    `layouts/**/*.vue`,
-    `pages/**/*.vue`,
-    `composables/**/*.{js,ts}`,
-    `plugins/**/*.{js,ts}`,
-    `App.{js,ts,vue}`,
-    `app.{js,ts,vue}`
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
   ],
   theme: {
     // screens: {
@@ -30,6 +28,7 @@ module.exports = {
       colors: {
         'header-color': 'rgba(155, 152, 138, 1)',
         'footer-color': 'rgba(206, 173, 141, 1)',
+        'body-color': '#D7C0AA',
         'hero-orange': '#FF8F66',
         'hero-gray': '#666666',
         'hero-blue': '#6666FF',
@@ -45,6 +44,7 @@ module.exports = {
       maxWidth: {
         '110': '110px',
         '300': '300px',
+        '370': '370px',
         '220': '220px',
         '268': '254px',
         '580': '580px',
@@ -56,12 +56,16 @@ module.exports = {
         '75p': '75%',
         '307': '307px',
         '411': '411px',
+        '456': '456px',
         '540': '540px',
         '1200': '1200px',
         'min': 'min-content',
       },
       spacing: {
         '90px': '90px',
+        '161px': '161px',
+        '230px': '230px',
+        '120px': '120px',
         '90p': '90%',
         '40px': '40px',
         '36px': '36px',
@@ -72,8 +76,9 @@ module.exports = {
         '60px': '60px',
         '44px': '44px',
         '7px': '7px',
-        '26.5': '26.5%',
+        '27': '27%',
         '14.5': '14.5%',
+        '47.5': '47.5%',
       },
       fontSize: {
         '40': '40px',

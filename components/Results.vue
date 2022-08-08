@@ -1,5 +1,5 @@
 <template>
-    <div class="results bg-footer-color flex flex-col text-white pt-60px">
+    <div class="results bg-body-color flex flex-col text-white pt-60px">
         <span class="font-bold text-4xl self-center">Наши результаты </span>
         <div class="bg-results bg-cover bg-no-repeat bg-center h-540 mt-60px flex justify-center items-center ">
             <div class="container h-90p flex bg-results-container items-center pl-30px">

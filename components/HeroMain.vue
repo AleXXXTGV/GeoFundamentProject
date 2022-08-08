@@ -1,7 +1,7 @@
 <template>
     <div class="hero bg-hero-pattern bg-cover bg-no-repeat bg-center h-screen pt-90px bg-black">
       <div class="container relative h-full">
-        <div class="absolute right-0 bottom-26.5 flex flex-col">
+        <div class="absolute right-0 bottom-27 flex flex-col">
           <h1 class="text-4xl companyTitle self-end">
             <span class="text-hero-orange font-bold">GEO</span>
             <span class="text-hero-gray font-bold">FUNDAMENT</span>

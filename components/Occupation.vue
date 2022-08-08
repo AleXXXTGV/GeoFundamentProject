@@ -1,5 +1,5 @@
 <template>
-    <div class="whatAreWeDoing bg-footer-color py-60px h-1200 flex">
+    <div class="whatAreWeDoing bg-body-color py-60px h-1200 flex">
       <div class="container flex justify-between content-between flex-wrap">
         <div class="item bg-item1 bg-cover bg-no-repeat bg-center max-w-580 h-307 rounded w-1/2 bg-black">
           <div class="container relative h-full">

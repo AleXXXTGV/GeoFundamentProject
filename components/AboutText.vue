@@ -1,9 +1,9 @@
 <template>
     <div class="my-60px">
-        <div class="container text-white text-32">
+        <div class="container text-white text-32 underNumber">
             <span class="font-bold">Коротко о нас: Огромный 35-ти летний опыт работы специалистов
                 OOO"GEOFUNDAMENTPROJECT"</span>
-            <span>
+            <span class="">
                 приобретенный при
                 реализации крупнейших проектов, с использованием современных оборудований, применением собственных
                 прогрессивных инновационных методов и технологий позволяет нам оперативно и с высоким качеством

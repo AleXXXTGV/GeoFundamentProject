@@ -1,8 +1,8 @@
 <template>
-    <header class="h-90 bg-header-color w-full sticky top-0 z-50">
+    <header class="h-90 bg-header-color w-full fixed top-0 z-50">
         <div class="container min-h-full flex justify-between items-center">
             <div class="logo">
-                <img src="~/static/imgs/logo.png" alt="logo">
+                <nuxt-link to="/"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
             </div>
             <nav class="header__menu w-3/6 flex justify-center">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between">

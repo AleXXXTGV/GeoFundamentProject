@@ -1,5 +1,5 @@
 <template>
-    <div class="management bg-footer-color">
+    <div class="management bg-body-color">
         <div class="container flex flex-col items-center">
         <span class="text-white font-bold text-4xl">Руководвство компании GeoFundamentProject</span>
         <div class="flex w-full mt-60px">
