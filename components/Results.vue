@@ -5,7 +5,7 @@
             class="bg-results bg-cover bg-no-repeat bg-center h-540 mt-60px flex justify-center items-center ">
             <div class="container h-90p flex bg-results-container items-center pl-30px">
                 <div class="w-26.5 flex flex-col text-center">
-                    <span class="block font-bold text-220"><span class="count_number">33</span></span>
+                    <span class="block font-bold text-220 w-313px"><span class="count_number">33</span></span>
                     <span class="block font-bold text-40 underNumber">года на рынке</span>
                 </div>
                 <div class="flex flex-wrap justify-end h-75p content-between">
