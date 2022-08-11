@@ -1,5 +1,5 @@
 <template>
-    <header class="h-90 bg-header-color w-full fixed top-0 z-50">
+    <header class="h-90 bg-header-color w-full fixed top-0 z-50 raleway">
         <div class="container min-h-full flex justify-between items-center">
             <div class="logo">
                 <nuxt-link to="/"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
@@ -7,7 +7,7 @@
             <nav class="header__menu w-3/6 flex justify-center">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between">
                     <li><nuxt-link to="/">Главная</nuxt-link></li>
-                    <li><a href="google.com">Конференция</a></li>
+                    <li><a href="https://google.com">Конференция</a></li>
                     <li><nuxt-link to="/about">О нас</nuxt-link></li>
                 </ul>
             </nav>

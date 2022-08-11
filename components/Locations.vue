@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container mb-90px">
+        <div class="container mb-90px raleway">
             <span class="text-40 text-white mt-60px mb-120px">Наши филиалы в Узбекистане</span>
             <div class="flex flex-col">
                 <div class="flex justify-between max-w-580 my-60px">

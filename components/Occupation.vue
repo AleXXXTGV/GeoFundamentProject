@@ -1,8 +1,8 @@
 <template>
   <div class="whatAreWeDoing bg-body-color py-60px h-1200 flex">
     <div class="container flex justify-between content-between flex-wrap">
-      <div class="item relative overflow-hidden w-47.5 h-307 rounded bg-black">
-        <img src="~/static/imgs/item1.png" alt="itemBg" class="absolute object-cover object-center w-full">
+      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+        <img src="~/static/imgs/item1.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Отдел топграфии укомплетованный современными приборами, может
@@ -14,7 +14,8 @@
           </div>
         </div>
       </div>
-      <div class="item overflow-hidden bg-item2 bg-cover bg-no-repeat bg-center w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+        <img src="~/static/imgs/item2.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Мы способны проводить инженерно- геологические,геотехнический а также гидрогеологические исследования  в любых условиях и в любой сложности</span>
@@ -24,7 +25,8 @@
           </div>
         </div>
       </div>
-      <div class="item overflow-hidden bg-item3 bg-cover bg-no-repeat bg-center w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+        <img src="~/static/imgs/item3.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Что такое комплексное проектирование?
@@ -35,7 +37,8 @@
           </div>
         </div>
       </div>
-      <div class="item overflow-hidden bg-item4 bg-cover bg-no-repeat bg-center w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+        <img src="~/static/imgs/item4.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Наша спец.техника которая в основном специализированна на бурении, может выполнять роботы по бурению скважин, горизонтальное бурение а также свайных фундаментов разного типа</span>
@@ -45,7 +48,8 @@
           </div>
         </div>
       </div>
-      <div class="item overflow-hidden bg-item5 bg-cover bg-no-repeat bg-center h-411 rounded w-full bg-black">
+      <div class="item raleway overflow-hidden relative h-411 rounded w-full bg-black">
+        <img src="~/static/imgs/item5.png" alt="itemBg" class="absolute object-cover object-center w-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Комплексный подход, взгляд ко всему с разных ракурсов а также технические возможности, дают нам возможность строить здания и сооружения любой сложности.</span>
@@ -64,6 +68,7 @@ export default {
 }
 </script>
 <style>
+
 .item__text {
   transition: 300ms ease;
 }
