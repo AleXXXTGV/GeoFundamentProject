@@ -40,6 +40,49 @@ export default {
   ],
   i18n: {
     /* module options */
+    locales: ['en', 'ru', 'uz'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          headerLinks: {
+            main: 'Main',
+            conference: 'Conference',
+            about: 'About us',
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        },
+        ru: {
+          headerLinks: {
+            main: 'Главная',
+            conference: 'Конференция',
+            about: 'О нас',
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        },
+        uz: {
+          headerLinks: {
+            main: 'Uy',
+            conference: 'Konferensiya',
+            about: 'Biz haqimizda',
+          },
+          languages: {
+            ru: 'RU',
+            en: 'EN',
+            uz: 'UZ',
+          }
+        }
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
