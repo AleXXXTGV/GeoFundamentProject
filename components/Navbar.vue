@@ -6,20 +6,26 @@
             </div>
             <nav class="header__menu w-3/6 flex justify-center">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between">
-                    <li><nuxt-link to="localePath('/')">{{ $t('headerLinks.main') }}</nuxt-link></li>
+                    <li>
+                        <nuxt-link to="localePath('/')">{{ $t('headerLinks.main') }}</nuxt-link>
+                    </li>
                     <li><a href="https://google.com">{{ $t('headerLinks.conference') }}</a></li>
-                    <li><nuxt-link to="/about">{{ $t('headerLinks.about') }}</nuxt-link></li>
+                    <li>
+                        <nuxt-link to="/about">{{ $t('headerLinks.about') }}</nuxt-link>
+                    </li>
                 </ul>
             </nav>
 
             <div class="languages text-white">
-                <nuxt-link :to="switchLocalePath('ru')">{{ $t('languages.ru') }}</nuxt-link>
+                <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">{{
+                        locale.name
+                }}</nuxt-link>
                 |
                 <nuxt-link :to="switchLocalePath('en')">{{ $t('languages.en') }}</nuxt-link>
                 |
                 <nuxt-link :to="switchLocalePath('uz')">{{ $t('languages.uz') }}</nuxt-link>
             </div>
-            <div class="md:hidden flex toggle" @click="showMobileMenu">
+            <div class="toggle md:hidden flex" @click="showMobileMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -39,7 +45,13 @@ export default {
                 menutoggle.classList.toggle('active')
             }
         }
+    },
+    computed: {
+        availableLocales() {
+            return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+        }
     }
+
 }
 </script>
 <style>
@@ -60,7 +72,7 @@ export default {
     position: absolute;
     width: 40px;
     height: 4px;
-    background: #1863ff;
+    background: rgba(155, 152, 138, 1);
     border-radius: 4px;
     transition: 0.5s;
 }
