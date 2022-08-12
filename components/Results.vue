@@ -1,5 +1,5 @@
 <template>
-    <div class="results bg-body-color flex flex-col text-white pt-60px">
+    <div class="results bg-body-color flex flex-col text-white pt-60px hidden">
         <span class="font-bold text-4xl self-center raleway">Наши результаты </span>
         <div ref="observer"
             class="bg-results bg-cover bg-no-repeat bg-center h-540 mt-60px flex justify-center items-center ">

@@ -40,7 +40,20 @@ export default {
   ],
   i18n: {
     /* module options */
-    locales: ['en', 'ru', 'uz'],
+    locales: [
+    {
+      code: 'en',
+      name: 'EN'
+    },
+    {
+      code: 'ru',
+      name: 'RU'
+    },
+    {
+      code: 'uz',
+      name: 'UZ'
+    }
+  ],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',

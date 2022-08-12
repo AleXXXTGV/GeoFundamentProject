@@ -2,27 +2,25 @@
     <header class="h-90 bg-header-color w-full fixed top-0 z-50 raleway">
         <div class="container min-h-full flex justify-between items-center">
             <div class="logo">
-                <nuxt-link to="/"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
+                <nuxt-link :to="localePath('/')"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
             </div>
             <nav class="header__menu w-3/6 flex justify-center">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between">
                     <li>
-                        <nuxt-link to="localePath('/')">{{ $t('headerLinks.main') }}</nuxt-link>
+                        <nuxt-link :to="localePath('/')">{{ $t('headerLinks.main') }}</nuxt-link>
                     </li>
                     <li><a href="https://google.com">{{ $t('headerLinks.conference') }}</a></li>
                     <li>
-                        <nuxt-link to="/about">{{ $t('headerLinks.about') }}</nuxt-link>
+                        <nuxt-link :to="localePath('/about')">{{ $t('headerLinks.about') }}</nuxt-link>
                     </li>
                 </ul>
             </nav>
 
-            <div class="languages text-white">
-                <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">{{
-                        locale.name
-                }}</nuxt-link>
-                |
+            <div class="languages text-white flex justify-between">
+                <nuxt-link :to="switchLocalePath('ru')">{{ $t('languages.ru') }}</nuxt-link>
+                <span>|</span>
                 <nuxt-link :to="switchLocalePath('en')">{{ $t('languages.en') }}</nuxt-link>
-                |
+                <span>|</span>
                 <nuxt-link :to="switchLocalePath('uz')">{{ $t('languages.uz') }}</nuxt-link>
             </div>
             <div class="toggle md:hidden flex" @click="showMobileMenu">
@@ -59,9 +57,6 @@ export default {
     position: relative;
     width: 70px;
     height: 70px;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -72,7 +67,7 @@ export default {
     position: absolute;
     width: 40px;
     height: 4px;
-    background: rgba(155, 152, 138, 1);
+    background: black;
     border-radius: 4px;
     transition: 0.5s;
 }

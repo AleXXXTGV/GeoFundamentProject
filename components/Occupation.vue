@@ -1,7 +1,7 @@
 <template>
-  <div class="whatAreWeDoing bg-body-color py-60px h-1200 flex">
+  <div class="whatAreWeDoing bg-body-color pb-60px pt-30px flex">
     <div class="container flex justify-between content-between flex-wrap">
-      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full lg:w-47.5 h-307 rounded bg-black">
         <img src="~/static/imgs/item1.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full lg:w-47.5 h-307 rounded bg-black">
         <img src="~/static/imgs/item2.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full lg:w-47.5 h-307 rounded bg-black">
         <img src="~/static/imgs/item3.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="item raleway relative overflow-hidden w-full md:w-47.5 h-307 rounded bg-black">
+      <div class="item raleway relative overflow-hidden w-full lg:w-47.5 h-307 rounded bg-black">
         <img src="~/static/imgs/item4.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="item raleway overflow-hidden relative h-411 rounded w-full bg-black">
-        <img src="~/static/imgs/item5.png" alt="itemBg" class="absolute object-cover object-center w-full">
+        <img src="~/static/imgs/item5.png" alt="itemBg" class="absolute object-cover object-center w-full h-full">
         <div class="container relative h-full">
           <div class="item__text absolute -top-161px">
             <span class="text-24 text-white font-bold">Комплексный подход, взгляд ко всему с разных ракурсов а также технические возможности, дают нам возможность строить здания и сооружения любой сложности.</span>
@@ -68,7 +68,9 @@ export default {
 }
 </script>
 <style>
-
+.item {
+  margin-top:30px;
+}
 .item__text {
   transition: 300ms ease;
 }
@@ -78,7 +80,7 @@ export default {
 }
 
 .item:hover .item__text {
-  top: 53px;
+  top: 10px;
 }
 
 .item:hover .item__title {

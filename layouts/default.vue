@@ -32,11 +32,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   caret-color: transparent;
 }
-.nuxt-link-active {
-  color: red;
-}
 .nuxt-link-exact-active {
-  color: green;
+  color: #D7C0AA;
 }
 .nuxt-link-prefetched {
   color: yellow;
