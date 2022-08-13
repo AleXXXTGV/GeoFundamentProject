@@ -3,7 +3,7 @@
     <MobileMenu v-show="showMobileMenu" />
     <Navbar @showMobileMenu="showMobileMenu = true" />
     <Nuxt />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 <script>

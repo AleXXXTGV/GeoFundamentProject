@@ -32,10 +32,10 @@
                             </div>
                     </div>
                 </div>
-                <div class="flex flew-wrap content-end h-min font-bold justify-between items-end">
-                    <a href="#" class="raleway h-min">uzssmge@gmail.com
+                <div class="flex flex-wrap content-end h-min font-bold justify-between items-end">
+                    <a href="#" class="raleway h-min block">uzssmge@gmail.com
                     </a>
-                    <a href="#">
+                    <a href="#" class="block">
                         <img src="~/static/imgs/mail.svg" alt="mail">
                     </a>
                 </div>

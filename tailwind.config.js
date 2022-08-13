@@ -8,12 +8,24 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    // screens: {
-    //   sm: '320px',
-    //   md: '768px',
-    //   lg: '976px',
-    //   xl: '1440px',
-    // },
+    screens: {
+      mw: '360px',
+      fh: '500px',
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       backgroundImage: {
         'hero-pattern': "url('~/static/imgs/Hero.svg')",
@@ -52,6 +64,7 @@ module.exports = {
       },
       height: {
         '90': '90px',
+        '167': '167px',
         '90p': '90%',
         '75p': '75%',
         '307': '307px',
@@ -63,7 +76,7 @@ module.exports = {
       },
       spacing: {
         '90px': '90px',
-        '161px': '100%',
+        '161px': '105%',
         '230px': '230px',
         '120px': '120px',
         '90p': '90%',
