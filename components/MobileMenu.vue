@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="header__menu w-3/6 flex justify-center">
+        <nav class="header__menu w-3/6 flex justify-center z-20">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between">
                     <li><nuxt-link to="/">Главная</nuxt-link></li>
                     <li><a href="https://google.com">Конференция</a></li>

@@ -1,11 +1,11 @@
 <template>
-    <header class="h-90 bg-header-color w-full fixed top-0 z-50 raleway">
+    <header class="h-90 bg-header-color w-full fixed top-0 z-10 raleway">
         <div class="container min-h-full flex justify-between items-center">
             <div class="logo">
                 <nuxt-link :to="localePath('/')"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
             </div>
-            <nav class="header__menu w-3/6 flex justify-center">
-                <ul class="flex font-bold text-white w-full max-w-md justify-between">
+            <nav class="header__menu w-3/6 hidden md:flex justify-center">
+                <ul class="flex font-bold text-white w-full max-w-md justify-between 2xl:text-2xl">
                     <li>
                         <nuxt-link :to="localePath('/')">{{ $t('headerLinks.main') }}</nuxt-link>
                     </li>
@@ -16,7 +16,7 @@
                 </ul>
             </nav>
 
-            <div class="languages text-white flex justify-between">
+            <div class="languages w-1/6 text-white hidden md:flex justify-between 2xl:text-2xl">
                 <nuxt-link :to="switchLocalePath('ru')">{{ $t('languages.ru') }}</nuxt-link>
                 <span>|</span>
                 <nuxt-link :to="switchLocalePath('en')">{{ $t('languages.en') }}</nuxt-link>
