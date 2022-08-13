@@ -36,6 +36,7 @@ module.exports = {
         'item4': "url('~/static/imgs/item4.png')",
         'item5': "url('~/static/imgs/item5.png')",
         'results': "url('~/static/imgs/results.png')",
+        'resultsMobile': "url('~/static/imgs/resultsMobile.png')",
       },
       colors: {
         'header-color': 'rgba(155, 152, 138, 1)',
@@ -66,13 +67,20 @@ module.exports = {
         '90': '90px',
         '167': '167px',
         '90p': '90%',
+        '95p': '95%',
         '75p': '75%',
         '307': '307px',
         '411': '411px',
         '456': '456px',
         '540': '540px',
+        '680': '680px',
+        '800': '800px',
         '1200': '1200px',
         'min': 'min-content',
+      },
+      minHeight: {
+        '90p': '90%',
+        '95p': '95%',
       },
       spacing: {
         '90px': '90px',

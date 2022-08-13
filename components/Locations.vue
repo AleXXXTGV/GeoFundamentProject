@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="container mb-90px raleway">
-            <span class="text-40 text-white mt-60px mb-120px">Наши филиалы в Узбекистане</span>
+            <span class="text-40 text-white text-2xl md:mt-60px mb-120px">Наши филиалы в Узбекистане</span>
             <div class="flex flex-col">
-                <div class="flex justify-between max-w-580 my-60px">
+                <div class="flex flex-col md:flex-row justify-between max-w-580 my-60px">
                     <span class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': location}" @click="location = true">г.Самарканд</span>
                     <span class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': !location}" @click="location = false">г.Ташкент</span>
                 </div>
@@ -11,7 +11,7 @@
                 <div class="relative h-456">
                     <transition name="location">
                         <Location v-show="location">
-                                <div class="w-47.5 h-456 itemShadow relative bg-body-color flex justify-center">
+                                <div class="w-47.5 md:h-456 itemShadow relative bg-body-color flex justify-center">
                                     <span class="text-white text-32 block w-min absolute top-20px left-20px">г.Самарканд</span>
                                 <img src="~/static/imgs/samarkand.svg" alt="city" class="max-w-370">
                             </div>

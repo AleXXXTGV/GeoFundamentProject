@@ -1,6 +1,6 @@
 <template>
     <div class="my-60px raleway">
-        <div class="container text-white text-32">
+        <div class="container text-white md:text-32">
             <span class="font-bold">Коротко о нас: Огромный 35-ти летний опыт работы специалистов
                 OOO"GEOFUNDAMENTPROJECT"</span>
             <span class="">

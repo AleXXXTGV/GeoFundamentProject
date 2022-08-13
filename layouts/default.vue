@@ -27,6 +27,7 @@ export default {
 }
 .container {
   width: 95%;
+  max-width: none;
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;

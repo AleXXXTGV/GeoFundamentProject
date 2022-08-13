@@ -1,6 +1,6 @@
 <template>
     <div class="location">
-        <div class="location__content flex justify-between absolute inset-0">
+        <div class="location__content flex justify-between">
             <slot></slot>
         </div>
     </div>
