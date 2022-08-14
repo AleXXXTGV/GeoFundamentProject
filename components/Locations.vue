@@ -8,14 +8,14 @@
                     <span class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': !location}" @click="location = false">г.Ташкент</span>
                 </div>
                 
-                <div class="relative h-456">
+                <div class="relative overflow-hidden">
                     <transition name="location">
                         <Location v-show="location">
-                                <div class="w-47.5 md:h-456 itemShadow relative bg-body-color flex justify-center">
-                                    <span class="text-white text-32 block w-min absolute top-20px left-20px">г.Самарканд</span>
-                                <img src="~/static/imgs/samarkand.svg" alt="city" class="max-w-370">
+                            <div class="w-47.5 itemShadow bg-body-color">
+                                <span class="text-white text-32 block w-min">г.Самарканд</span>
+                                <img src="~/static/imgs/samarkand.svg" alt="city" class="max-w-370 max-h-240px">
                             </div>
-                            <div class="w-47.5 h-456 itemShadow">
+                            <div class="w-47.5 itemShadow">
                                 <video src="~/static/videos/samarqand.mp4" autoplay muted class="object-cover object-center h-full"></video>
                             </div>
                         </Location>
@@ -59,7 +59,11 @@ export default {
         filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.25));
     }
     .location-enter-active, .location-leave-active { 
-        transition: opacity .3s; 
+        position: relative;
+        right: 0;
         }
-    .location-enter, .location-leave-active { opacity: 0; }
+    .location-enter, .location-leave-active { 
+        position: absolute;
+        right: -110%;
+        }
 </style>
