@@ -1,8 +1,11 @@
 <template>
     <header class="h-90 bg-header-color w-full fixed top-0 z-10 raleway">
+    <Transition name="slide-fade">
+    <MobileMenu v-show="showMobileMenu" />
+    </Transition>
         <div class="container min-h-full flex justify-between items-center">
             <div class="logo">
-                <nuxt-link :to="localePath('/')"><img src="~/static/imgs/logo.png" alt="logo"></nuxt-link>
+                <nuxt-link :to="localePath('/')"><img src="~/static/img/logo.png" alt="logo"></nuxt-link>
             </div>
             <nav class="header__menu w-3/6 hidden md:flex justify-center">
                 <ul class="flex font-bold text-white w-full max-w-md justify-between 2xl:text-2xl">
@@ -23,7 +26,7 @@
                 <span>|</span>
                 <nuxt-link :to="switchLocalePath('uz')">{{ $t('languages.uz') }}</nuxt-link>
             </div>
-            <div class="toggle md:hidden flex" @click="showMobileMenu">
+            <div class="toggle md:hidden flex z-30" :class="{'active': showMobileMenu == true}" @click="showMobileMenu = !showMobileMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,17 +35,21 @@
     </header>
 </template>
 <script>
-
+import MobileMenu from './MobileMenu.vue';
+// let menutoggle = document.querySelector('.toggle');
+//             menutoggle.onclick = () => {
+//                 menutoggle.classList.toggle('active')
+// }
 export default {
     name: 'Navbar',
-    methods: {
-        showMobileMenu() {
-            this.$emit('showMobileMenu')
-            let menutoggle = document.querySelector('.toggle');
-            menutoggle.onclick = () => {
-                menutoggle.classList.toggle('active')
-            }
+    components: {MobileMenu},
+    data() {
+        return {
+            showMobileMenu: false
         }
+    },
+    methods: {
+            
     },
     computed: {
         availableLocales() {
@@ -98,5 +105,18 @@ export default {
 
 .toggle.active span:nth-child(3) {
     transform: translateX(60px);
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
 }
 </style>

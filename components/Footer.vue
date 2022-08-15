@@ -15,20 +15,20 @@
                     <div class="flex w-full content-center md:max-w-110 flex-wrap justify-between h-90 md:content-between mb-5 md:mb-0">
                         <div>
                             <a href="#">
-                                <img src="~/static/imgs/facebook.svg" alt="facebook">
+                                <img src="~/static/img/facebook.svg" alt="facebook">
                             </a>
                         </div>
                         <div>
                             <a href="#">
-                                <img src="~/static/imgs/telegram.svg" alt="telegram"></a>
+                                <img src="~/static/img/telegram.svg" alt="telegram"></a>
                             </div>
                         <div>
                             <a href="#">
-                                <img src="~/static/imgs/instagram.svg" alt="instagram"></a>
+                                <img src="~/static/img/instagram.svg" alt="instagram"></a>
                             </div>
                         <div>
                             <a href="#">
-                                <img src="~/static/imgs/youtube.svg" alt="youtube"></a>
+                                <img src="~/static/img/youtube.svg" alt="youtube"></a>
                             </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <a href="#" class="raleway h-min block">uzssmge@gmail.com
                     </a>
                     <a href="#" class="block">
-                        <img src="~/static/imgs/mail.svg" alt="mail">
+                        <img src="~/static/img/mail.svg" alt="mail">
                     </a>
                 </div>
             </div>

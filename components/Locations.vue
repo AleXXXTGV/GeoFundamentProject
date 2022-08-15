@@ -1,35 +1,20 @@
 <template>
     <div>
         <div class="container mb-90px raleway">
-            <span class="text-40 text-white text-2xl md:mt-60px mb-120px">Наши филиалы в Узбекистане</span>
+            <span class="text-40 text-white md:mt-60px mb-120px">Наши филиалы в Узбекистане</span>
             <div class="flex flex-col">
                 <div class="flex flex-col md:flex-row justify-between max-w-580 my-60px">
-                    <span class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': location}" @click="location = true">г.Самарканд</span>
-                    <span class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': !location}" @click="location = false">г.Ташкент</span>
+  <label class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': activeComponent == 'LocationOne'}">
+    <input type="radio" v-model="activeComponent" value="LocationOne" class="hidden">г.Самарканд
+  </label>
+  <label class="text-white text-32 block w-230px cursor-pointer" :class="{'border-solid border-b': activeComponent == 'LocationTwo'}">
+    <input type="radio" v-model="activeComponent" value="LocationTwo" class="hidden">г.Ташкент
+  </label>
                 </div>
                 
-                <div class="relative overflow-hidden">
-                    <transition name="location">
-                        <Location v-show="location">
-                            <div class="w-47.5 itemShadow bg-body-color">
-                                <span class="text-white text-32 block w-min">г.Самарканд</span>
-                                <img src="~/static/imgs/samarkand.svg" alt="city" class="max-w-370 max-h-240px">
-                            </div>
-                            <div class="w-47.5 itemShadow">
-                                <video src="~/static/videos/samarqand.mp4" autoplay muted class="object-cover object-center h-full"></video>
-                            </div>
-                        </Location>
-                    </transition>
-                    <transition name="location">
-                        <Location v-show="!location">
-                            <div class="w-47.5 h-456 itemShadow relative bg-body-color flex justify-center">
-                                <span class="text-white text-32 block w-min absolute top-20px left-20px">г.Ташкент</span>
-                                <img src="~/static/imgs/tashkent.svg" alt="city" class="max-w-370">
-                            </div>
-                            <div class="w-47.5 h-456 itemShadow">
-                                <video src="~/static/videos/tashkent.mp4" autoplay muted class="object-cover object-center h-full"></video>
-                            </div>
-                        </Location>
+                <div class="relative">
+                    <transition name="location" mode="out-in">
+                            <component :is="activeComponent"></component>
                     </transition>
                 </div>
 
@@ -39,16 +24,14 @@
     </div>
 </template>
 <script>
-import Location from './Location.vue';
+import LocationOne from './LocationOne.vue';
+import LocationTwo from './LocationTwo.vue';
 export default {
     name: 'Locations',
-    components: { Location },
+    components: { LocationOne,  LocationTwo},
     data() {
         return {
-            location: {
-            type: Boolean,
-            default: true
-        }
+        activeComponent: 'LocationOne'
         }
     },
     transitions: 'location'
@@ -58,12 +41,17 @@ export default {
     .itemShadow {
         filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.25));
     }
-    .location-enter-active, .location-leave-active { 
-        position: relative;
-        right: 0;
-        }
-    .location-enter, .location-leave-active { 
-        position: absolute;
-        right: -110%;
-        }
+    /*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.location-enter-active,
+.location-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.location-enter-from,
+.location-leave-to {
+  opacity: 0;
+}
 </style>

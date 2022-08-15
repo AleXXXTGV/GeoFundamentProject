@@ -28,15 +28,15 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('~/static/imgs/Hero.svg')",
-        'hero-pattern2': "url('~/static/imgs/Hero2.svg')",
-        'item1': "url('~/static/imgs/item1.png')",
-        'item2': "url('~/static/imgs/item2.png')",
-        'item3': "url('~/static/imgs/item3.png')",
-        'item4': "url('~/static/imgs/item4.png')",
-        'item5': "url('~/static/imgs/item5.png')",
-        'results': "url('~/static/imgs/results.png')",
-        'resultsMobile': "url('~/static/imgs/resultsMobile.png')",
+        'hero-pattern': "url('~/static/img/Hero.svg')",
+        'hero-pattern2': "url('~/static/img/Hero2.svg')",
+        'item1': "url('~/static/img/item1.png')",
+        'item2': "url('~/static/img/item2.png')",
+        'item3': "url('~/static/img/item3.png')",
+        'item4': "url('~/static/img/item4.png')",
+        'item5': "url('~/static/img/item5.png')",
+        'results': "url('~/static/img/results.png')",
+        'resultsMobile': "url('~/static/img/resultsMobile.png')",
       },
       colors: {
         'header-color': 'rgba(155, 152, 138, 1)',
@@ -77,6 +77,7 @@ module.exports = {
         '800': '800px',
         '1200': '1200px',
         'min': 'min-content',
+        '50v': '50vh',
       },
       minHeight: {
         '90p': '90%',

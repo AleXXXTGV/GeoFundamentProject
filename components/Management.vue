@@ -4,7 +4,7 @@
         <span class="text-white font-bold text-xl md:text-4xl text-center">Руководвство компании GeoFundamentProject</span>
         <div class="flex w-full mt-60px flex-col fh:flex-row">
             <div class="image">
-                <img src="~/static/imgs/boss1.png" alt="boss1" class="h-full w-full fh:w-auto">
+                <img src="~/static/img/boss1.png" alt="boss1" class="h-full w-full fh:w-auto">
             </div>
             <div class="info bg-managment-item-background w-full p-20px fh:p-0">
                 <div class="container h-full flex flex-col justify-center">
@@ -26,7 +26,7 @@
         </div>
         <div class="flex w-full mt-60px flex-col fh:flex-row">
             <div class="image">
-                <img src="~/static/imgs/boss2.png" alt="boss2" class="h-full w-full fh:w-auto">
+                <img src="~/static/img/boss2.png" alt="boss2" class="h-full w-full fh:w-auto">
             </div>
             <div class="info bg-managment-item-background w-full p-20px fh:p-0">
                 <div class="container h-full flex flex-col justify-center">

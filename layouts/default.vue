@@ -1,7 +1,6 @@
 <template>
   <div class="bg-body-color">
-    <MobileMenu v-show="showMobileMenu" />
-    <Navbar @showMobileMenu="showMobileMenu = true" />
+    <Navbar/>
     <Nuxt />
     <Footer />
   </div>
@@ -39,6 +38,4 @@ body {
 .nuxt-link-prefetched {
   color: yellow;
 }
-
-
 </style>
