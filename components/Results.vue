@@ -1,10 +1,10 @@
 <template>
     <div class="results bg-body-color flex flex-col text-white pt-60px">
         <span class="font-bold text-4xl self-center raleway">Наши результаты </span>
-        <div ref="observer"
+        <div
             class="bg-resultsMobile md:bg-results bg-cover bg-no-repeat bg-center h-auto lg:h-800 xl:h-540 mt-60px flex justify-center items-center py-9">
             <div class="container h-full md:p-5 p-7 flex-col xl:flex-row justify-around xl:justify-between flex bg-results-container items-center">
-                <div class="w-26.5 flex flex-col text-center">
+                <div ref="observer" class="w-26.5 flex flex-col text-center">
                     <span class="font-bold flex justify-center text-6xl lg:text-140 xl:text-220 w-313px"><span class="count_number">33</span></span>
                     <span class="block font-bold text-2xl lg:text-3xl xl:text-40 raleway">года на рынке</span>
                 </div>
