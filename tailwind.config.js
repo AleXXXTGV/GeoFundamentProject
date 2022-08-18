@@ -30,6 +30,7 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('~/static/img/Hero.svg')",
         'hero-pattern2': "url('~/static/img/Hero2.svg')",
+        'hero-pattern3': "url('~/static/img/MobileHeroMain.png')",
         'item1': "url('~/static/img/item1.png')",
         'item2': "url('~/static/img/item2.png')",
         'item3': "url('~/static/img/item3.png')",

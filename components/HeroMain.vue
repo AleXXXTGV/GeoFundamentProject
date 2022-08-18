@@ -1,5 +1,5 @@
 <template>
-    <div class="hero bg-hero-pattern bg-cover bg-no-repeat bg-center h-screen pt-90px bg-black">
+    <div class="hero bg-hero-pattern3 md:bg-hero-pattern bg-cover bg-no-repeat bg-center h-screen pt-90px bg-black">
       <div class="container relative h-full">
         <div class="absolute right-0 bottom-27 flex flex-col">
           <h1 class="text-4xl companyTitle self-end 2xl:text-7xl">
